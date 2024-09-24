@@ -1,4 +1,5 @@
 from .common import fetch_and_parse, extract_table_data, save_to_csv
+import pandas as pd
 
 def extract_wnba_player_salaries(url, output_file):
     soup = fetch_and_parse(url)
