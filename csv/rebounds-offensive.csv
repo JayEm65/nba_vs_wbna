@@ -1,0 +1,101 @@
+Rank,Player,Team,Pos,Value
+1,Clint Capela,Atlanta Hawks,C,4.58
+2,Rudy Gobert,Minnesota Timberwolves,C,3.57
+3,Domantas Sabonis,Sacramento Kings,PF,3.55
+4,Isaiah Hartenstein,New York Knicks,C,3.33
+5,Andre Drummond,Chicago Bulls,C,3.28
+6,Anthony Davis,Los Angeles Lakers,PF,3.19
+7,Jarrett Allen,Cleveland Cavaliers,C,3.19
+8,Jalen Duren,Detroit Pistons,C,3.15
+9,Jusuf Nurkic,Phoenix Suns,C,2.96
+10,Nikola Jokic,Denver Nuggets,C,2.92
+11,Alperen Sengun,Houston Rockets,C,2.90
+12,Ivica Zubac,Los Angeles Clippers,C,2.89
+13,Nikola Vucevic,Chicago Bulls,C,2.73
+14,Nic Claxton,Brooklyn Nets,C,2.72
+15,Giannis Antetokounmpo,Milwaukee Bucks,SF,2.68
+16,Saddiq Bey,Atlanta Hawks,PG,2.65
+17,Day'Ron Sharpe,Brooklyn Nets,C,2.64
+18,Walker Kessler,Utah Jazz,C,2.58
+19,Nick Richards,Charlotte Hornets,C,2.57
+20,Precious Achiuwa,New York Knicks,PF,2.57
+21,Dereck Lively II,Dallas Mavericks,C,2.53
+22,Aaron Gordon,Denver Nuggets,PF,2.47
+23,Daniel Gafford,Dallas Mavericks,PF,2.47
+24,Jonas Valanciunas,New Orleans Pelicans,C,2.42
+25,Amen Thompson,Houston Rockets,SG,2.39
+26,Scottie Barnes,Toronto Raptors,SF,2.35
+27,John Collins,Utah Jazz,PF,2.31
+28,Evan Mobley,Cleveland Cavaliers,C,2.27
+29,Paul Reed,Philadelphia 76ers,PF,2.27
+30,Victor Wembanyama,San Antonio Spurs,PF,2.27
+31,Bam Adebayo,Miami Heat,C,2.23
+32,Jabari Walker,Portland Trail Blazers,PF,2.10
+33,Ausar Thompson,Detroit Pistons,SG,2.05
+34,Toumani Camara,Portland Trail Blazers,PF,1.99
+35,Trayce Jackson-Davis,Golden State Warriors,PF,1.96
+36,Wendell Carter Jr.,Orlando Magic,C,1.95
+37,Kevon Looney,Golden State Warriors,PF,1.92
+38,Pascal Siakam,Indiana Pacers,PF,1.87
+39,Jeremy Sochan,San Antonio Spurs,PF,1.85
+40,Jabari Smith Jr.,Houston Rockets,PF,1.83
+41,Luke Kornet,Boston Celtics,C,1.80
+42,Bobby Portis,Milwaukee Bucks,PF,1.80
+43,Zion Williamson,New Orleans Pelicans,PF,1.76
+44,Josh Hart,New York Knicks,SG,1.76
+45,Jimmy Butler,Miami Heat,PF,1.75
+46,Jalen Smith,Indiana Pacers,PF,1.75
+47,James Wiseman,Detroit Pistons,C,1.75
+48,Goga Bitadze,Orlando Magic,C,1.72
+49,Zach Collins,San Antonio Spurs,PF,1.71
+50,Larry Nance Jr.,New Orleans Pelicans,SF,1.69
+51,Karl-Anthony Towns,Minnesota Timberwolves,C,1.65
+52,Dorian Finney-Smith,Brooklyn Nets,SF,1.60
+53,Brandin Podziemski,Golden State Warriors,SG,1.60
+54,Kristaps Porzingis,Boston Celtics,PF,1.58
+55,Chet Holmgren,Oklahoma City Thunder,C,1.55
+56,Isaiah Jackson,Indiana Pacers,PF,1.55
+57,Andrew Wiggins,Golden State Warriors,SF,1.51
+58,Brook Lopez,Milwaukee Bucks,C,1.51
+59,Myles Turner,Indiana Pacers,C,1.47
+60,Moritz Wagner,Orlando Magic,PF,1.47
+61,Keegan Murray,Sacramento Kings,SF,1.44
+62,Kelly Oubre Jr.,Philadelphia 76ers,SF,1.41
+63,Tristan Thompson,Cleveland Cavaliers,C,1.41
+64,Daniel Theis,Los Angeles Clippers,PF,1.39
+65,Al Horford,Boston Celtics,C,1.39
+66,Kelly Olynyk,Toronto Raptors,PF,1.38
+67,Keldon Johnson,San Antonio Spurs,SF,1.38
+68,Jrue Holiday,Boston Celtics,PG,1.38
+69,Kris Murray,Portland Trail Blazers,PF,1.37
+70,Duop Reath,Portland Trail Blazers,C,1.37
+71,Russell Westbrook,Los Angeles Clippers,PG,1.34
+72,Drew Eubanks,Phoenix Suns,PF,1.32
+73,Dwight Powell,Dallas Mavericks,PF,1.32
+74,Josh Giddey,Oklahoma City Thunder,SG,1.31
+75,Jaren Jackson Jr.,Memphis Grizzlies,PF,1.29
+76,Terance Mann,Los Angeles Clippers,SG,1.28
+77,Jonathan Isaac,Orlando Magic,PF,1.28
+78,Jonathan Kuminga,Golden State Warriors,PF,1.25
+79,Kawhi Leonard,Los Angeles Clippers,SF,1.24
+80,P.J. Washington,Dallas Mavericks,PF,1.24
+81,Michael Porter Jr.,Denver Nuggets,PF,1.23
+82,Tobias Harris,Philadelphia 76ers,SF,1.22
+83,Nicolas Batum,Philadelphia 76ers,SG,1.21
+84,Xavier Tillman,Boston Celtics,PF,1.19
+85,Jaylen Brown,Boston Celtics,SG,1.19
+86,Santi Aldama,Memphis Grizzlies,PF,1.18
+87,Derrick Jones Jr.,Dallas Mavericks,SF,1.17
+88,Josh Okogie,Phoenix Suns,SG,1.16
+89,Caleb Martin,Miami Heat,SF,1.15
+90,Dario Saric,Golden State Warriors,SF,1.14
+91,Grant Williams,Charlotte Hornets,PF,1.13
+92,Deni Avdija,Washington Wizards,SF,1.12
+93,Jaden Ivey,Detroit Pistons,PG,1.12
+94,Paolo Banchero,Orlando Magic,PF,1.10
+95,Jaime Jaquez Jr.,Miami Heat,SG,1.07
+96,Trey Lyles,Sacramento Kings,PF,1.07
+97,Luguentz Dort,Oklahoma City Thunder,SG,1.04
+98,Franz Wagner,Orlando Magic,SF,1.04
+99,Zeke Nnaji,Denver Nuggets,PF,1.03
+100,Miles Bridges,Charlotte Hornets,SF,1.03
