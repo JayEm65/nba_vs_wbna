@@ -10,8 +10,8 @@ def extract_wnba_player_salaries(url, output_file):
     
     for tr in table.find('tbody').find_all('tr'):
         cells = tr.find_all('td')
-        name = cells[0].text.strip().split('\n')[0]  # Only take first part for the name
-        salary = cells[1].text.strip().split()[0]    # Only take the salary amount
+        name = cells[0].text.strip().split('\n')[0]
+        salary = cells[1].text.strip().split()[0]
         row = [name, salary]
         rows.append(row)
     
