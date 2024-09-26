@@ -7,9 +7,10 @@ def clean_and_extract_top_salaries(nba_file, wnba_file, output_nba_file, output_
     # If there are multiple salary columns, select one, assuming '2024 Salary'
     if '2023/24(*)' in nba_df.columns:
         nba_df = nba_df.rename(columns={'2023/24(*)': '2024 Salary'})
+    elif '2023/24' in nba_df.columns:
+        nba_df = nba_df.rename(columns={'2023/24': '2024 Salary'})
 
     # Convert NBA Salary column to numeric
-    nba_df = nba_df[nba_df['2024 Salary'].str.startswith('$', na=False)]
     nba_df['2024 Salary'] = nba_df['2024 Salary'].replace(r'[\$,]', '', regex=True).astype(float)
 
     # Remove duplicates and keep the highest salary
@@ -17,6 +18,9 @@ def clean_and_extract_top_salaries(nba_file, wnba_file, output_nba_file, output_
 
     # Keep top 150 highest-paid NBA players
     top_150_nba_df = cleaned_nba_df.head(150)
+
+    # Drop unnecessary columns to remove old salary formatting
+    top_150_nba_df = top_150_nba_df[['Player', '2024 Salary']]
 
     # Save cleaned NBA salaries to a new CSV
     top_150_nba_df.to_csv(output_nba_file, index=False)
@@ -34,6 +38,9 @@ def clean_and_extract_top_salaries(nba_file, wnba_file, output_nba_file, output_
 
     # Keep top 150 highest-paid WNBA players
     top_150_wnba_df = cleaned_wnba_df.head(150)
+
+    # Drop unnecessary columns to ensure consistent formatting
+    top_150_wnba_df = top_150_wnba_df[['Player', '2024 Salary']]
 
     # Save cleaned WNBA salaries to a new CSV
     top_150_wnba_df.to_csv(output_wnba_file, index=False)
