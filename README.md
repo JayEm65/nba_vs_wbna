@@ -1,4 +1,4 @@
-# 🏀 NBA vs WNBA: Salaries and Player Efficiency Ratings 🏀
+# 🏀 NBA vs WNBA: Salaries and Player Efficiency Ratings
 
 ## 📖 Introduction
 This project compares the salaries and Player Efficiency Ratings (PER) of players in the NBA and WNBA. By scraping data from various sports websites and performing thorough data cleaning and analysis, we aim to identify patterns, variances, and insights between the two leagues. We also came up with our own player efficiency rating (PER) for further analysis.
