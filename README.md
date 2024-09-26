@@ -1,7 +1,7 @@
-# 🏀 NBA vs WNBA: Salaries and Player Efficiency Ratings
+# 🏀 NBA vs WNBA: Salaries and Player Efficiency Ratings 🏀
 
 ## 📖 Introduction
-This project compares the salaries and Player Efficiency Ratings (PER) of players in the NBA and WNBA. By scraping data from various sports websites and performing thorough data cleaning and analysis, we aim to identify patterns, variances, and insights between the two leagues. We also came up with our own player efficiency rating (PER) for further analysis.
+This project compares the salaries and Player Efficiency Ratings (PER) of players in the NBA and WNBA. By scraping data from various sports websites and performing thorough data cleaning and analysis, we aim to identify patterns, variances, and insights between the two leagues. We also came up with our own player efficiency rating (PER) for further analysis. Key insights are visualized and the code is modularized for clarity and reusability.
 
 ## 🌐 Data Sources
 Data was collected exclusively through web scraping from the following sources:
@@ -78,7 +78,19 @@ Through data analysis, the following conclusions were drawn:
 - **Salary Disparity Confirmed**: NBA player salaries are significantly higher than WNBA player salaries.
 - **PER Analysis**: Players with higher salaries generally have higher PER in both leagues.
 
-## ❓ Potential Further Questions [PENDING]
+### Visualizations
+We created the following visualizations to better illustrate our findings:
+
+1. **Comparison of Total WNBA Team Salaries (12 Teams) vs. Top NBA Earner (Stephen Curry)**
+   - This pie chart shows the stark difference between the combined salaries of all WNBA teams and the salary of the highest-paid NBA player.
+   
+2. **Comparison of Total WNBA Player Salaries vs. Top NBA Earner (Stephen Curry)**
+   - This pie chart compares the combined salaries of all WNBA players against the salary of the top-earning NBA player.
+   
+3. **Comparison of Total NBA PER (O-PER + D-PER) vs. Total WNBA PER (O-PER + D-PER)**
+   - This pie chart visualizes the combined Player Efficiency Ratings for both NBA and WNBA, demonstrating the performance effectiveness across both leagues.
+
+## ❓ Potential Further Questions
 - How do external factors (like media coverage, sponsorship deals) influence player salaries in the NBA vs WNBA?
 - What are the trends in rookie salaries and how do they progress compared to veteran players in both leagues?
 
@@ -99,7 +111,7 @@ Through data analysis, the following conclusions were drawn:
 The exploratory data analysis methods used include:
 - **Aggregation**: Grouping data by specific attributes to find overall trends.
 - **Filtering**: Narrowing down data sets based on specific criteria to find relevant insights.
-- **Visualizations**: Plots and graphs to visually represent data patterns. [PENDING]
+- **Visualizations**: Plots and graphs to visually represent data patterns.
 
 ## 📜 Results and Insights
 Through data analysis, the following conclusions were drawn:
