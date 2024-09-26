@@ -46,12 +46,60 @@ def clean_and_extract_top_salaries(nba_file, wnba_file, output_nba_file, output_
     top_150_wnba_df.to_csv(output_wnba_file, index=False)
     print(f"Cleaned WNBA salaries saved to '{output_wnba_file}'.")
 
-if __name__ == "__main__":
-    # Paths to the input and output files
-    nba_file = 'nba_player_salaries_2024.csv'
-    wnba_file = 'wnba_player_salaries_2024.csv'
-    output_nba_file = 'cleaned_data/top_150_nba_player_salaries_2024.csv'
-    output_wnba_file = 'cleaned_data/top_150_wnba_player_salaries_2024.csv'
+def clean_and_extract_top_team_salaries(nba_team_file, wnba_team_file, output_nba_team_file, output_wnba_team_file):
+    # Load NBA Team Salaries CSV
+    nba_team_df = pd.read_csv(nba_team_file)
 
-    # Execute the cleaning and processing function
-    clean_and_extract_top_salaries(nba_file, wnba_file, output_nba_file, output_wnba_file)
+    # If there are multiple salary columns, select one, assuming '2024 Salary'
+    if '2023/24(*)' in nba_team_df.columns:
+        nba_team_df = nba_team_df.rename(columns={'2023/24(*)': '2024 Total Salaries'})
+    elif '2023/24' in nba_team_df.columns:
+        nba_team_df = nba_team_df.rename(columns={'2023/24': '2024 Total Salaries'})
+
+    # Convert NBA Team Salary column to numeric
+    nba_team_df['2024 Total Salaries'] = nba_team_df['2024 Total Salaries'].replace(r'[\$,]', '', regex=True).astype(float)
+
+    # Keep top 12 highest-paid NBA teams
+    top_12_nba_team_df = nba_team_df.sort_values('2024 Total Salaries', ascending=False).head(12)
+
+    # Drop unnecessary columns to remove old salary formatting
+    top_12_nba_team_df = top_12_nba_team_df[['Team', '2024 Total Salaries']]
+
+    # Save cleaned NBA team salaries to a new CSV
+    top_12_nba_team_df.to_csv(output_nba_team_file, index=False)
+    print(f"Cleaned NBA team salaries saved to '{output_nba_team_file}'.")
+
+    # Load WNBA Team Salaries CSV
+    wnba_team_df = pd.read_csv(wnba_team_file)
+
+    # Convert WNBA Team Salary column to numeric
+    wnba_team_df['Total Salaries'] = wnba_team_df['Total Salaries'].replace(r'[\$,]', '', regex=True).astype(float)
+
+    # Keep top 12 highest-paid WNBA teams
+    top_12_wnba_team_df = wnba_team_df.sort_values('Total Salaries', ascending=False).head(12)
+
+    # Drop unnecessary columns to ensure consistent formatting
+    top_12_wnba_team_df = top_12_wnba_team_df[['Team', 'Total Salaries']]
+
+    # Save cleaned WNBA team salaries to a new CSV
+    top_12_wnba_team_df.to_csv(output_wnba_team_file, index=False)
+    print(f"Cleaned WNBA team salaries saved to '{output_wnba_team_file}'.")
+
+if __name__ == "__main__":
+    # Paths to the input and output files for player salaries
+    nba_player_file = 'nba_player_salaries_2024.csv'
+    wnba_player_file = 'wnba_player_salaries_2024.csv'
+    output_nba_player_file = 'cleaned_data/top_150_nba_player_salaries_2024.csv'
+    output_wnba_player_file = 'cleaned_data/top_150_wnba_player_salaries_2024.csv'
+
+    # Paths to the input and output files for team salaries
+    nba_team_file = 'nba_team_salaries_2024.csv'
+    wnba_team_file = 'wnba_team_salaries_2024.csv'
+    output_nba_team_file = 'cleaned_data/top_12_nba_team_salaries_2024.csv'
+    output_wnba_team_file = 'cleaned_data/top_12_wnba_team_salaries_2024.csv'
+
+    # Execute the cleaning and processing function for player salaries
+    clean_and_extract_top_salaries(nba_player_file, wnba_player_file, output_nba_player_file, output_wnba_player_file)
+
+    # Execute the cleaning and processing function for team salaries
+    clean_and_extract_top_team_salaries(nba_team_file, wnba_team_file, output_nba_team_file, output_wnba_team_file)
