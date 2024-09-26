@@ -15,7 +15,7 @@ def clean_and_extract_top_per(nba_file, wnba_file, output_nba_file, output_wnba_
     wnba_df = wnba_df[['Player', wnba_per_column]].dropna()
     # Save cleaned WNBA PER data to a new CSV
     wnba_df.to_csv(output_wnba_file, index=False)
-    print(f"Cleaned WNBA {wnba_per_column} data saved to '{output_wnba_file}'.")
+    print(f"Cleaned WNBA {nba_per_column} data saved to '{output_wnba_file}'.")
 
 if __name__ == "__main__":
     # Paths to the input and output files for Offensive PER cleaning
